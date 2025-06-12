@@ -18,7 +18,7 @@ Google Maps location
 WhatsApp integration for quick contact
 Modern, responsive, and user-friendly design
 Technologies Used
-React.js (or Bolt.new, Next.js, etc.)
+React.js, Next.js
 Tailwind CSS for styling
 Netlify for deployment
 [Google Maps Embed API] for the location map
