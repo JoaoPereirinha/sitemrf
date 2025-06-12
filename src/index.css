@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-800 font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-navy-900 leading-tight;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 md:px-8;
+  }
+
+  .nav-link {
+    @apply px-3 py-2 text-navy-700 hover:text-[#D95B29] transition-colors duration-300;
+  }
+
+  .nav-link-active {
+    @apply px-3 py-2 text-[#D95B29] font-medium;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-6 text-navy-900 relative inline-block;
+  }
+
+  .section-title::after {
+    content: "";
+    @apply absolute bottom-0 left-0 w-2/3 h-1 bg-[#D95B29] rounded-full;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .btn-primary {
+    @apply bg-[#D95B29] hover:bg-[#C24D22] text-white font-medium py-2 px-6 rounded-md transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-navy-600 hover:bg-navy-700 text-white font-medium py-2 px-6 rounded-md transition-colors duration-300;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-500 hover:shadow-lg;
+  }
+}
+
+/* Scroll Animations */
+.animate-on-scroll {
+  animation: fadeInUp 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-on-scroll.delay-100 {
+  animation-delay: 200ms;
+}
+
+.animate-on-scroll.delay-200 {
+  animation-delay: 400ms;
+}
+
+.animate-on-scroll.delay-300 {
+  animation-delay: 600ms;
+}
+
+.animate-on-scroll.delay-400 {
+  animation-delay: 800ms;
+}
+
+.animate-on-scroll.delay-500 {
+  animation-delay: 1000ms;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero Section Animations */
+.hero-content {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Initial state for animations */
+[class*="animate-on-scroll"] {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+/* Slide transitions */
+.slide-transition {
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-out;
+}
+
+/* Form animations */
+.form-animate {
+  transition: all 1.5s ease-out;
+}
+
+.form-animate:focus {
+  transform: translateY(-2px);
+}
