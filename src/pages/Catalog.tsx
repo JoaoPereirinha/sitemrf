@@ -624,36 +624,73 @@ const Catalog: React.FC = () => {
       <main className="pt-24">
         <section className="section-padding">
           <div className="container-custom">
-            <div className="flex justify-between items-start mb-8">
-              <div className="flex-1">
-                <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">Catálogo de Marcas</h1>
-                <p className="text-lg text-gray-600 max-w-3xl">
+            {/* Desktop Layout */}
+            <div className="hidden md:block">
+              <div className="flex justify-between items-start mb-8">
+                <div className="flex-1">
+                  <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">Catálogo de Marcas</h1>
+                  <p className="text-lg text-gray-600 max-w-3xl">
+                    Descubra a nossa seleção completa de marcas de referência no mercado da construção.
+                    Cada marca foi cuidadosamente escolhida para garantir a máxima qualidade e satisfação dos nossos clientes.
+                  </p>
+                </div>
+
+                {/* Search and Filter Controls - positioned at the top right */}
+                <div className="flex items-start gap-3 ml-8">
+                  {/* Search Box - smaller and positioned to the right */}
+                  <div className="w-64">
+                    <input
+                      type="text"
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      placeholder="Pesquisar marcas..."
+                      className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-[#D95B29] focus:border-[#D95B29] shadow-sm"
+                    />
+                  </div>
+
+                  {/* Category Filter Toggle - Orange button with just icon */}
+                  <button
+                    onClick={() => setShowFilters(!showFilters)}
+                    className="flex items-center justify-center w-10 h-10 bg-[#D95B29] text-white rounded-md hover:bg-[#C24D22] transition-colors shadow-sm"
+                    title="Filtrar por Categoria"
+                  >
+                    <Filter className="w-5 h-5" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile Layout */}
+            <div className="block md:hidden">
+              <div className="mb-8">
+                <h1 className="text-4xl font-bold text-navy-900 mb-6">Catálogo de Marcas</h1>
+                <p className="text-lg text-gray-600 mb-6">
                   Descubra a nossa seleção completa de marcas de referência no mercado da construção.
                   Cada marca foi cuidadosamente escolhida para garantir a máxima qualidade e satisfação dos nossos clientes.
                 </p>
-              </div>
 
-              {/* Search and Filter Controls - positioned at the top right */}
-              <div className="flex items-start gap-3 ml-8">
-                {/* Search Box - smaller and positioned to the right */}
-                <div className="w-64">
-                  <input
-                    type="text"
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    placeholder="Pesquisar marcas..."
-                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-[#D95B29] focus:border-[#D95B29] shadow-sm"
-                  />
+                {/* Search and Filter Controls - below text on mobile */}
+                <div className="flex items-center gap-3">
+                  {/* Search Box */}
+                  <div className="flex-1">
+                    <input
+                      type="text"
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      placeholder="Pesquisar marcas..."
+                      className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-[#D95B29] focus:border-[#D95B29] shadow-sm"
+                    />
+                  </div>
+
+                  {/* Category Filter Toggle - Orange button with just icon */}
+                  <button
+                    onClick={() => setShowFilters(!showFilters)}
+                    className="flex items-center justify-center w-10 h-10 bg-[#D95B29] text-white rounded-md hover:bg-[#C24D22] transition-colors shadow-sm"
+                    title="Filtrar por Categoria"
+                  >
+                    <Filter className="w-5 h-5" />
+                  </button>
                 </div>
-
-                {/* Category Filter Toggle - Orange button with just icon */}
-                <button
-                  onClick={() => setShowFilters(!showFilters)}
-                  className="flex items-center justify-center w-10 h-10 bg-[#D95B29] text-white rounded-md hover:bg-[#C24D22] transition-colors shadow-sm"
-                  title="Filtrar por Categoria"
-                >
-                  <Filter className="w-5 h-5" />
-                </button>
               </div>
             </div>
 
