@@ -27,7 +27,6 @@ Netlify for deployment
 Deployment
 The website is currently live at:
 www.mrf.pt
-(or add your real domain/Netlify link here if already published)
 
 License
 This project is for portfolio purposes and for the exclusive use of Mário Ribeiro & Filhos, LDA.
