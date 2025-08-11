@@ -23,9 +23,9 @@ const slides: Slide[] = [
   },
   {
     id: 4,
-    imageUrl: "/Slide3.png",
-    title: "Atendimento Personalizado",
-    description: "A nossa equipa de especialistas está pronta para o aconselhar."
+    imageUrl: "/slide0.png",
+    title: "Informamos os nossos clientes que estaremos encerrados de 11 a 16 de agosto",
+    description: "Entretanto deixe-nos uma mensagem."
   }
 ];
 
