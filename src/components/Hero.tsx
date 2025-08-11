@@ -13,7 +13,7 @@ const slides: Slide[] = [
     id: 1,
     imageUrl: "/slide0.png",
     title: "Informamos os nossos clientes que estaremos encerrados de 11 a 16 de agosto",
-    description: "Entretanto deixe-nos uma mensagem."
+    description: "Entretanto pode deixar-nos uma mensagem e entraremos em contacto consigo quando voltarmos."
   },
   {
     id: 2,
