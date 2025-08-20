@@ -11,18 +11,12 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    imageUrl: "/slide0.png",
-    title: "Informamos os nossos clientes que estaremos encerrados de 11 a 16 de agosto",
-    description: "Entretanto pode deixar-nos uma mensagem e entraremos em contacto consigo quando voltarmos."
-  },
-  {
-    id: 2,
     imageUrl: "/Slide1.png",
     title: "Confiança e Experiência ao Seu Serviço",
     description: "Com mais de 35 anos no mercado, a Mário Ribeiro & Filhos garante qualidade no serviço prestado ao seu cliente."
   },
   {
-    id: 3,
+    id: 2,
     imageUrl: "https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg",
     title: "Materiais de Qualidade para a Sua Obra",
     description: "Revendedores de marcas de confiança e de renome no mercado nacional."
@@ -94,9 +88,9 @@ const Hero: React.FC = () => {
                 </p>
                 <button 
                   className="btn-primary"
-                  onClick={index === 0 ? scrollToContacts : index === 1 ? scrollToAboutUs : index === 2 ? scrollToMarcas : undefined}
+                  onClick={index === 0 ? scrollToAboutUs : index === 1 ? scrollToMarcas : undefined}
                 >
-                  {index === 0 ? 'Contactos' : index === 1 ? 'Sobre Nós' : index === 2 ? 'Marcas' : 'Saiba Mais'}
+                  {index === 0 ? 'Sobre Nós' : index === 1 ? 'Marcas' : 'Saiba Mais'}
                 </button>
               </div>
             </div>
