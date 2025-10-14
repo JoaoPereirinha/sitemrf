@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid3X3, Droplets, Mountain, Building, Home, Paintbrush, Shield, TreePine, Flame, Flower } from 'lucide-react';
+import { Grid3x3 as Grid3X3, Droplets, Mountain, Building, Home, Paintbrush, Shield, TreePine, Flame, Flower } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 

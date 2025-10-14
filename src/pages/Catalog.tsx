@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
-import { Grid3X3, Droplets, Mountain, Building, Home, Paintbrush, Shield, TreePine, Flame, Flower, Filter } from 'lucide-react';
+import { Grid3x3 as Grid3X3, Droplets, Mountain, Building, Home, Paintbrush, Shield, TreePine, Flame, Flower, Filter } from 'lucide-react';
 
 interface Brand {
   id: number;
