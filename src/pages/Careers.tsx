@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
-import { Users, Award, Clock, MapPin, Mail, Phone, Building2, Heart, TrendingUp, Shield } from 'lucide-react';
+import { Users, Award, Clock, MapPin, Mail, Phone, Building2, Heart, TrendingUp, Shield, Briefcase, CheckCircle } from 'lucide-react';
 
 const Careers: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -106,13 +106,27 @@ const Careers: React.FC = () => {
     }
   ];
 
-  const positions = [
-    "Vendedor/a",
-    "Técnico/a Comercial",
-    "Operador/a de Armazém",
-    "Administrativo/a",
-    "Motorista",
-    "Outra posição"
+  const openPositions = [
+    {
+      title: "Vendedor/a",
+      type: "Full-time",
+      description: "Procuramos vendedor/a dinâmico/a com experiência em atendimento ao cliente e vendas.",
+      requirements: [
+        "Experiência em atendimento ao cliente",
+        "Boa capacidade de comunicação",
+        "Conhecimentos de materiais de construção (preferencial)"
+      ]
+    },
+    {
+      title: "Operador/a de Armazém",
+      type: "Full-time",
+      description: "Necessitamos de operador/a de armazém para gestão de stock e preparação de encomendas.",
+      requirements: [
+        "Experiência em gestão de armazém",
+        "Carta de empilhador (preferencial)",
+        "Capacidade de organização"
+      ]
+    }
   ];
 
   return (
@@ -180,14 +194,63 @@ const Careers: React.FC = () => {
           </div>
         </section>
 
-        {/* Application Form */}
+        {/* Open Positions */}
         <section className="section-padding bg-gray-50">
+          <div className="container-custom">
+            <h2 className="section-title mb-4 text-center">Vagas Disponíveis</h2>
+            <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+              Estamos atualmente à procura de profissionais para as seguintes posições
+            </p>
+
+            <div className="max-w-4xl mx-auto space-y-6">
+              {openPositions.map((position, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex items-center gap-3">
+                      <Briefcase className="w-6 h-6 text-[#D95B29]" />
+                      <div>
+                        <h3 className="text-xl font-semibold text-navy-800">{position.title}</h3>
+                        <span className="text-sm text-gray-600">{position.type}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p className="text-gray-700 mb-4">{position.description}</p>
+
+                  <div className="mb-4">
+                    <h4 className="font-semibold text-navy-800 mb-2">Requisitos:</h4>
+                    <ul className="space-y-2">
+                      {position.requirements.map((req, reqIndex) => (
+                        <li key={reqIndex} className="flex items-start gap-2 text-gray-700">
+                          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span>{req}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <a
+                    href="#application-form"
+                    className="inline-block btn-primary"
+                    onClick={() => setFormData(prev => ({ ...prev, position: position.title }))}
+                  >
+                    Candidatar-me a esta vaga
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Spontaneous Application Form */}
+        <section id="application-form" className="section-padding bg-white">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="section-title">Candidate-se Agora</h2>
+                <h2 className="section-title">Candidaturas Espontâneas</h2>
                 <p className="text-lg text-gray-600 mt-4">
-                  Envie-nos a sua candidatura e faça parte da nossa equipa de sucesso.
+                  Não encontrou a posição ideal? Envie-nos a sua candidatura espontânea.
+                  Estamos sempre à procura de talentos para a nossa equipa.
                 </p>
               </div>
 
@@ -246,7 +309,7 @@ const Careers: React.FC = () => {
                 {/* Application Form */}
                 <div>
                   <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md">
-                    <h3 className="text-xl font-semibold mb-6 text-navy-800">Formulário de Candidatura</h3>
+                    <h3 className="text-xl font-semibold mb-6 text-navy-800">Formulário de Candidatura Espontânea</h3>
                     
                     <div className="space-y-4">
                       <div>
@@ -292,20 +355,17 @@ const Careers: React.FC = () => {
                       </div>
                       
                       <div>
-                        <label htmlFor="position" className="block text-sm font-medium text-gray-700 mb-1">Posição de Interesse *</label>
-                        <select
+                        <label htmlFor="position" className="block text-sm font-medium text-gray-700 mb-1">Área de Interesse *</label>
+                        <input
+                          type="text"
                           id="position"
                           name="position"
                           value={formData.position}
                           onChange={handleInputChange}
                           required
                           className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#D95B29] focus:border-[#D95B29]"
-                        >
-                          <option value="">Selecione uma posição</option>
-                          {positions.map((position) => (
-                            <option key={position} value={position}>{position}</option>
-                          ))}
-                        </select>
+                          placeholder="Ex: Vendas, Armazém, Administrativo, etc."
+                        />
                       </div>
                       
                       <div>
