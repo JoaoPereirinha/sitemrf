@@ -40,6 +40,7 @@ const LoadingScreen: React.FC<{ onLoadingComplete: () => void }> = ({ onLoadingC
       </div>
       
       <p className="mt-12 text-lg font-medium text-navy-900">
+      <p className="mt-12 text-lg font-medium text-[#D95B29]">
         A carregar... {progress}%
       </p>
     </div>
@@ -47,3 +48,5 @@ const LoadingScreen: React.FC<{ onLoadingComplete: () => void }> = ({ onLoadingC
 };
 
 export default LoadingScreen;
+  )
+}
