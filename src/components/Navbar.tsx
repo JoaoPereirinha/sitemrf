@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-navy-900 focus:outline-none" 
+          className="md:hidden text-[#D95B29] focus:outline-none" 
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >

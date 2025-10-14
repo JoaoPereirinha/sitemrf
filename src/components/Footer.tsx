@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-navy-900 text-white pt-16 pb-8">
+    <footer className="bg-[#D95B29] text-white pt-16 pb-8">
       <div className="container-custom">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4 text-white">Horário de Funcionamento</h3>
             <div className="space-y-4">
               <div className="flex items-start">
-                <Clock className="h-6 w-6 text-[#D95B29] mr-3 flex-shrink-0" />
+                <Clock className="h-6 w-6 text-orange-200 mr-3 flex-shrink-0" />
                 <div>
                   <h4 className="font-medium text-white mb-2">Segunda a Sexta</h4>
                   <p className="text-gray-300">
@@ -94,14 +94,14 @@ const Footer: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <Clock className="h-6 w-6 text-[#D95B29] mr-3 flex-shrink-0" />
+                <Clock className="h-6 w-6 text-orange-200 mr-3 flex-shrink-0" />
                 <div>
                   <h4 className="font-medium text-white mb-2">Sábado</h4>
                   <p className="text-gray-300">8:30 - 12:30</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <Clock className="h-6 w-6 text-[#D95B29] mr-3 flex-shrink-0" />
+                <Clock className="h-6 w-6 text-orange-200 mr-3 flex-shrink-0" />
                 <div>
                   <h4 className="font-medium text-white mb-2">Domingos e Feriados</h4>
                   <p className="text-gray-300">Fechado</p>
@@ -115,14 +115,14 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4 text-white">Contactos</h3>
             <ul className="space-y-4">
               <li className="flex">
-                <Navigation className="h-6 w-6 text-[#D95B29] mr-3 flex-shrink-0" />
+                <Navigation className="h-6 w-6 text-orange-200 mr-3 flex-shrink-0" />
                 <span className="text-gray-300">
                   Rua Principal 382<br />
                   3840-265 Gafanha do Areão, Portugal
                 </span>
               </li>
               <li className="flex">
-                <PhoneCall className="h-6 w-6 text-[#D95B29] mr-3 flex-shrink-0" />
+                <PhoneCall className="h-6 w-6 text-orange-200 mr-3 flex-shrink-0" />
                 <div className="text-gray-300">
                   <div>
                     +351 234 799 810
@@ -131,7 +131,7 @@ const Footer: React.FC = () => {
                 </div>
               </li>
               <li className="flex">
-                <Mail className="h-6 w-6 text-[#D95B29] mr-3 flex-shrink-0" />
+                <Mail className="h-6 w-6 text-orange-200 mr-3 flex-shrink-0" />
                 <span className="text-gray-300">geral@mrf.pt</span>
               </li>
             </ul>
@@ -139,7 +139,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Copyright Section */}
-        <div className="border-t border-gray-700 pt-8">
+        <div className="border-t border-orange-400 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} Mário Ribeiro e Filhos, LDA. Todos os direitos reservados.
