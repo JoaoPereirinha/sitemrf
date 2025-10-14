@@ -119,35 +119,6 @@ const Careers: React.FC = () => {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       <main className="pt-24">
-        {/* Hero Section */}
-        <section className="section-padding bg-navy-900 text-white">
-          <div className="container-custom">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Junte-se à Nossa Equipa
-              </h1>
-              <p className="text-xl mb-8 text-gray-300">
-                Há mais de 35 anos que construímos o futuro com as melhores pessoas. 
-                Venha fazer parte da família Mário Ribeiro & Filhos.
-              </p>
-              <div className="flex flex-wrap justify-center gap-8 text-sm">
-                <div className="flex items-center gap-2">
-                  <Building2 className="w-5 h-5 text-[#D95B29]" />
-                  <span>Empresa familiar desde 1988</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Users className="w-5 h-5 text-[#D95B29]" />
-                  <span>Equipa experiente</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Award className="w-5 h-5 text-[#D95B29]" />
-                  <span>Líder no sector</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Why Work With Us */}
         <section className="section-padding bg-white">
           <div className="container-custom">
