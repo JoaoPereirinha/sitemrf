@@ -12,7 +12,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold text-navy-900 leading-tight;
+    @apply font-semibold text-[#D95B29] leading-tight;
   }
 }
 
@@ -22,7 +22,7 @@
   }
 
   .nav-link {
-    @apply px-3 py-2 text-navy-700 hover:text-[#D95B29] transition-colors duration-300;
+    @apply px-3 py-2 text-[#D95B29] hover:text-orange-600 transition-colors duration-300;
   }
 
   .nav-link-active {
@@ -30,7 +30,7 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-6 text-navy-900 relative inline-block;
+    @apply text-3xl md:text-4xl font-bold mb-6 text-[#D95B29] relative inline-block;
   }
 
   .section-title::after {
@@ -47,7 +47,7 @@
   }
 
   .btn-secondary {
-    @apply bg-navy-600 hover:bg-navy-700 text-white font-medium py-2 px-6 rounded-md transition-colors duration-300;
+    @apply bg-[#D95B29] hover:bg-orange-600 text-white font-medium py-2 px-6 rounded-md transition-colors duration-300;
   }
 
   .card {

@@ -120,7 +120,7 @@ const Careers: React.FC = () => {
       <Navbar />
       <main className="pt-24">
         {/* Hero Section */}
-        <section className="section-padding bg-navy-900 text-white">
+        <section className="section-padding bg-[#D95B29] text-white">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -159,14 +159,14 @@ const Careers: React.FC = () => {
                   <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform">
                     {benefit.icon}
                   </div>
-                  <h3 className="text-xl font-semibold mb-3 text-navy-800">{benefit.title}</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-[#D95B29]">{benefit.title}</h3>
                   <p className="text-gray-600">{benefit.description}</p>
                 </div>
               ))}
             </div>
 
-            <div className="bg-navy-50 rounded-lg p-8">
-              <h3 className="text-2xl font-semibold mb-6 text-navy-800 text-center">O Que Oferecemos</h3>
+            <div className="bg-orange-50 rounded-lg p-8">
+              <h3 className="text-2xl font-semibold mb-6 text-[#D95B29] text-center">O Que Oferecemos</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">
@@ -224,12 +224,12 @@ const Careers: React.FC = () => {
                 {/* Contact Info */}
                 <div className="space-y-8">
                   <div>
-                    <h3 className="text-xl font-semibold mb-6 text-navy-800">Informações de Contacto</h3>
+                    <h3 className="text-xl font-semibold mb-6 text-[#D95B29]">Informações de Contacto</h3>
                     <div className="space-y-4">
                       <div className="flex items-start">
                         <MapPin className="w-6 h-6 text-[#D95B29] mr-4 mt-1 flex-shrink-0" />
                         <div>
-                          <h4 className="font-semibold text-navy-800 mb-1">Morada</h4>
+                          <h4 className="font-semibold text-[#D95B29] mb-1">Morada</h4>
                           <p className="text-gray-700">Rua Principal 382<br />3840-265 Gafanha do Areão, Portugal</p>
                         </div>
                       </div>
@@ -237,7 +237,7 @@ const Careers: React.FC = () => {
                       <div className="flex items-start">
                         <Phone className="w-6 h-6 text-[#D95B29] mr-4 mt-1 flex-shrink-0" />
                         <div>
-                          <h4 className="font-semibold text-navy-800 mb-1">Telefone</h4>
+                          <h4 className="font-semibold text-[#D95B29] mb-1">Telefone</h4>
                           <p className="text-gray-700">+351 234 799 810</p>
                         </div>
                       </div>
@@ -245,7 +245,7 @@ const Careers: React.FC = () => {
                       <div className="flex items-start">
                         <Mail className="w-6 h-6 text-[#D95B29] mr-4 mt-1 flex-shrink-0" />
                         <div>
-                          <h4 className="font-semibold text-navy-800 mb-1">Email</h4>
+                          <h4 className="font-semibold text-[#D95B29] mb-1">Email</h4>
                           <p className="text-gray-700">geral@mrf.pt</p>
                         </div>
                       </div>
@@ -253,7 +253,7 @@ const Careers: React.FC = () => {
                       <div className="flex items-start">
                         <Clock className="w-6 h-6 text-[#D95B29] mr-4 mt-1 flex-shrink-0" />
                         <div>
-                          <h4 className="font-semibold text-navy-800 mb-1">Horário</h4>
+                          <h4 className="font-semibold text-[#D95B29] mb-1">Horário</h4>
                           <p className="text-gray-700">
                             Segunda a Sexta: 8:30 - 12:30 & 14:00 - 19:00<br />
                             Sábado: 8:30 - 12:30
@@ -264,7 +264,7 @@ const Careers: React.FC = () => {
                   </div>
 
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <h4 className="font-semibold text-navy-800 mb-3">Dica</h4>
+                    <h4 className="font-semibold text-[#D95B29] mb-3">Dica</h4>
                     <p className="text-gray-600 text-sm">
                       Pode também entregar o seu CV pessoalmente na nossa loja durante o horário de funcionamento. 
                       A nossa equipa terá todo o gosto em conhecê-lo!
@@ -275,7 +275,7 @@ const Careers: React.FC = () => {
                 {/* Application Form */}
                 <div>
                   <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md">
-                    <h3 className="text-xl font-semibold mb-6 text-navy-800">Formulário de Candidatura</h3>
+                    <h3 className="text-xl font-semibold mb-6 text-[#D95B29]">Formulário de Candidatura</h3>
                     
                     <div className="space-y-4">
                       <div>

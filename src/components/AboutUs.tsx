@@ -23,25 +23,25 @@ const AboutUs: React.FC = () => {
           <div className="grid grid-cols-2 gap-6">
             <div className="card p-6 group hover:-translate-y-2 transition-transform duration-300">
               <Building2 className="w-12 h-12 text-[#D95B29] mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-semibold mb-2">As Nossas Instalações</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#D95B29]">As Nossas Instalações</h3>
               <p className="text-gray-600">400m² de exposição, 900m² de drogaria e 6000m² de armazém para melhor servir os nossos clientes.</p>
             </div>
             
             <div className="card p-6 group hover:-translate-y-2 transition-transform duration-300">
               <Users className="w-12 h-12 text-[#D95B29] mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-semibold mb-2">Equipa Qualificada</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#D95B29]">Equipa Qualificada</h3>
               <p className="text-gray-600">Profissionais com experiência no sector da construção.</p>
             </div>
             
             <div className="card p-6 group hover:-translate-y-2 transition-transform duration-300">
               <Award className="w-12 h-12 text-[#D95B29] mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-semibold mb-2">Qualidade Garantida</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#D95B29]">Qualidade Garantida</h3>
               <p className="text-gray-600">Trabalhamos apenas com as melhores marcas e produtos certificados.</p>
             </div>
             
             <div className="card p-6 group hover:-translate-y-2 transition-transform duration-300">
               <Clock className="w-12 h-12 text-[#D95B29] mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-semibold mb-2">35+ Anos de Experiência</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#D95B29]">35+ Anos de Experiência</h3>
               <p className="text-gray-600">Mais de três décadas dedicadas ao sector da construção.</p>
             </div>
           </div>

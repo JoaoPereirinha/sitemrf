@@ -96,7 +96,7 @@ const Brands: React.FC = () => {
                     </div>
                   </div>
                   <div className="p-4">
-                    <h3 className="text-xl font-semibold mb-2 text-navy-800">{brand.name}</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-[#D95B29]">{brand.name}</h3>
                     <p className="text-gray-600">{brand.description}</p>
                   </div>
                 </a>

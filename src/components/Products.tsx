@@ -171,7 +171,7 @@ const Products: React.FC = () => {
               >
                 <div className="flex items-center gap-3 mb-4">
                   {category.icon}
-                  <h3 className="text-lg font-semibold text-navy-800 group-hover:text-[#D95B29] transition-colors duration-300">
+                  <h3 className="text-lg font-semibold text-[#D95B29] group-hover:text-orange-600 transition-colors duration-300">
                     {category.title}
                   </h3>
                 </div>
