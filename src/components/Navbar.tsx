@@ -8,6 +8,7 @@ const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const isCatalogPage = location.pathname === '/catalogo';
+  const isCareersPage = location.pathname === '/carreiras';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +27,7 @@ const Navbar: React.FC = () => {
     if (path.startsWith('/')) {
       navigate(path);
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else if (isCatalogPage) {
+    } else if (isCatalogPage || isCareersPage) {
       navigate('/', { replace: true });
       setTimeout(() => {
         const element = document.querySelector(path);
@@ -63,7 +64,7 @@ const Navbar: React.FC = () => {
         <nav className="hidden md:flex space-x-1">
           <button onClick={() => handleNavigation('/')} className="nav-link-active">Home</button>
           <button onClick={() => handleNavigation('/carreiras')} className="nav-link">Carreiras</button>
-          {!isCatalogPage && (
+          {!isCatalogPage && !isCareersPage && (
             <>
               <button onClick={() => handleNavigation('#sobre-nos')} className="nav-link">Sobre Nós</button>
               <button onClick={() => handleNavigation('#produtos')} className="nav-link">Produtos</button>
@@ -84,7 +85,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div 
+      <div
         className={`md:hidden absolute top-full left-0 right-0 bg-white shadow-md transition-all duration-300 overflow-hidden ${
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
@@ -92,7 +93,7 @@ const Navbar: React.FC = () => {
         <div className="container-custom py-4 flex flex-col space-y-3">
           <button onClick={() => handleNavigation('/')} className="nav-link-active text-left">Home</button>
           <button onClick={() => handleNavigation('/carreiras')} className="nav-link text-left">Carreiras</button>
-          {!isCatalogPage && (
+          {!isCatalogPage && !isCareersPage && (
             <>
               <button onClick={() => handleNavigation('#sobre-nos')} className="nav-link text-left">Sobre Nós</button>
               <button onClick={() => handleNavigation('#produtos')} className="nav-link text-left">Produtos</button>
