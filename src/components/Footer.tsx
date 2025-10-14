@@ -71,6 +71,9 @@ const Footer: React.FC = () => {
                 <button onClick={() => handleNavigation('#contactos')} className="text-gray-300 hover:text-white transition-colors">Contactos</button>
               </li>
               <li>
+                <button onClick={() => handleNavigation('/carreiras')} className="text-gray-300 hover:text-white transition-colors">Carreiras</button>
+              </li>
+              <li>
                 <button onClick={() => handleNavigation('/politica-de-privacidade')} className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</button>
               </li>
             </ul>
