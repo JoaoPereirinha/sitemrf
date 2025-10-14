@@ -45,3 +45,5 @@ const LoadingScreen: React.FC<{ onLoadingComplete: () => void }> = ({ onLoadingC
     </div>
   );
 };
+
+export default LoadingScreen;
