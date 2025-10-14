@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
-import { Grid3X3, Droplets, Mountain, Building, Home, Paintbrush, Shield, TreePine, Flame, Flower, Filter } from 'lucide-react';
+import { Grid3x3 as Grid3X3, Droplets, Mountain, Building, Home, Paintbrush, Shield, TreePine, Flame, Flower, Filter } from 'lucide-react';
 
 interface Brand {
   id: number;
@@ -628,7 +628,7 @@ const Catalog: React.FC = () => {
             <div className="hidden md:block">
               <div className="flex justify-between items-start mb-8">
                 <div className="flex-1">
-                  <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">Catálogo de Marcas</h1>
+                  <h1 className="text-4xl md:text-5xl font-bold text-[#D95B29] mb-6">Catálogo de Marcas</h1>
                   <p className="text-lg text-gray-600 max-w-3xl">
                     Descubra a nossa seleção completa de marcas de referência no mercado da construção.
                     Cada marca foi cuidadosamente escolhida para garantir a máxima qualidade e satisfação dos nossos clientes.
@@ -663,7 +663,7 @@ const Catalog: React.FC = () => {
             {/* Mobile Layout */}
             <div className="block md:hidden">
               <div className="mb-8">
-                <h1 className="text-4xl font-bold text-navy-900 mb-6">Catálogo de Marcas</h1>
+                <h1 className="text-4xl font-bold text-[#D95B29] mb-6">Catálogo de Marcas</h1>
                 <p className="text-lg text-gray-600 mb-6">
                   Descubra a nossa seleção completa de marcas de referência no mercado da construção.
                   Cada marca foi cuidadosamente escolhida para garantir a máxima qualidade e satisfação dos nossos clientes.
@@ -698,7 +698,7 @@ const Catalog: React.FC = () => {
             {showFilters && (
               <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
                 <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-lg font-semibold text-navy-800">Categorias de Produtos</h3>
+                  <h3 className="text-lg font-semibold text-[#D95B29]">Categorias de Produtos</h3>
                   {/* Clear Filters inside the menu */}
                   {(searchTerm || selectedCategory) && (
                     <button
@@ -790,7 +790,7 @@ const Catalog: React.FC = () => {
                         </div>
                       </div>
                       <div className="p-6">
-                        <h2 className="text-2xl font-semibold text-navy-900 mb-2">{brand.name}</h2>
+                        <h2 className="text-2xl font-semibold text-[#D95B29] mb-2">{brand.name}</h2>
                         {brand.description && <p className="text-gray-600">{brand.description}</p>}
                       </div>
                     </a>
