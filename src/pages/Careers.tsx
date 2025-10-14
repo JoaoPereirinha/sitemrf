@@ -108,12 +108,12 @@ const Careers: React.FC = () => {
 
   const openPositions = [
     {
-      title: "Vendedor/a",
+      title: "Operador/a Logístico/a",
       type: "Full-time",
-      description: "Procuramos vendedor/a dinâmico/a com experiência em atendimento ao cliente e vendas.",
+      description: "Procuramos operador/a logístico/a dinâmico/a com experiência em gestão de armazém e logística.",
       requirements: [
-        "Experiência em atendimento ao cliente",
-        "Boa capacidade de comunicação",
+        "Experiência em operações logísticas",
+        "Boa capacidade de organização",
         "Conhecimentos de materiais de construção (preferencial)"
       ]
     },
