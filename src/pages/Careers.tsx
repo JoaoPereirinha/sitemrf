@@ -108,12 +108,12 @@ const Careers: React.FC = () => {
 
   const openPositions = [
     {
-      title: "Operador/a Logístico/a",
+      title: "Colaborador(a) para drogaria (Atendimento ao público)",
       type: "Full-time",
-      description: "Procuramos operador/a logístico/a dinâmico/a com experiência em gestão de armazém e logística.",
+      description: "Procuramos colaborador(a) dinâmico/a para atendimento ao público na nossa drogaria.",
       requirements: [
-        "Experiência em operações logísticas",
-        "Boa capacidade de organização",
+        "Boa capacidade de comunicação e relacionamento interpessoal",
+        "Simpatia e proatividade no atendimento ao cliente",
         "Conhecimentos de materiais de construção (preferencial)"
       ]
     },
