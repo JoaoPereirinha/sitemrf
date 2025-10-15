@@ -146,7 +146,6 @@ const JobAdministrativo: React.FC = () => {
                       'Processamento de encomendas e faturação',
                       'Apoio na gestão de fornecedores',
                       'Elaboração de documentos e relatórios',
-                      'Organização de agendas e reuniões',
                       'Controlo de stocks e encomendas',
                       'Apoio geral às equipas comercial e de gestão'
                     ].map((item, index) => (
@@ -162,14 +161,12 @@ const JobAdministrativo: React.FC = () => {
                   <h2 className="text-2xl font-semibold text-navy-800 mb-4">Requisitos</h2>
                   <ul className="space-y-3">
                     {[
-                      'Formação em área administrativa ou equivalente',
                       'Experiência em funções administrativas (preferencial)',
                       'Excelentes conhecimentos de MS Office (Word, Excel, Outlook)',
                       'Boa capacidade de organização e gestão de prioridades',
                       'Sentido de responsabilidade e rigor',
                       'Excelente capacidade de comunicação escrita e oral',
                       'Proatividade e espírito de equipa',
-                      'Disponibilidade imediata (preferencial)'
                     ].map((item, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-[#D95B29] flex-shrink-0 mt-0.5" />
