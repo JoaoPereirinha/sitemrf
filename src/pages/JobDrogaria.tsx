@@ -162,7 +162,7 @@ const JobDrogaria: React.FC = () => {
                   <h2 className="text-2xl font-semibold text-navy-800 mb-4">Requisitos</h2>
                   <ul className="space-y-3">
                     {[
-                      'Excelente capacidade de comunicação e relacionamento interpessoal',
+                      'Capacidade de comunicação e relacionamento interpessoal',
                       'Simpatia, proatividade e gosto pelo atendimento ao cliente',
                       'Facilidade de aprendizagem e adaptação',
                       'Responsabilidade e pontualidade',
