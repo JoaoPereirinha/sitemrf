@@ -133,7 +133,7 @@ const JobAdministrativo: React.FC = () => {
                   </p>
                   <p className="text-gray-700 leading-relaxed">
                     O(a) candidato(a) ideal terá experiência em funções administrativas, bons conhecimentos de informática
-                    e excelente capacidade de organização e gestão de tarefas.
+                    e capacidade de organização e gestão de tarefas.
                   </p>
                 </div>
 
