@@ -166,7 +166,6 @@ const JobArmazem: React.FC = () => {
                       'Carta de empilhador (preferencial)',
                       'Excelente capacidade de organização e atenção ao detalhe',
                       'Capacidade física para movimentação de cargas',
-                      'Conhecimentos de informática na ótica do utilizador',
                       'Conhecimentos de materiais de construção (preferencial)',
                       'Sentido de responsabilidade e pontualidade',
                       'Capacidade de trabalhar em equipa',
