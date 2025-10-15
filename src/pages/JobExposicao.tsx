@@ -165,7 +165,6 @@ const JobExposicao: React.FC = () => {
                       'Excelente apresentação e capacidade de comunicação',
                       'Gosto por design, decoração e materiais de construção',
                       'Experiência em vendas ou atendimento ao cliente (preferencial)',
-                      'Formação em design, arquitetura ou áreas relacionadas (preferencial)',
                       'Criatividade e sentido estético apurado',
                       'Capacidade de trabalhar por objetivos',
                       'Proatividade e orientação para resultados',
