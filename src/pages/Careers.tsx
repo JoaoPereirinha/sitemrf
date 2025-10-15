@@ -346,7 +346,7 @@ const Careers: React.FC = () => {
                   <MapPin className="w-6 h-6 text-[#D95B29] mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-navy-800 mb-1">Morada</h4>
-                    <p className="text-gray-700">Rua Principal 382<br />3840-265 Gafanha do Areão, Portugal</p>
+                    <p className="text-gray-700">Rua Principal 455, Gafanha do Areão<br />3840-265 Gafanha da Boa-Hora Portugal</p>
                   </div>
                 </div>
 
@@ -362,7 +362,7 @@ const Careers: React.FC = () => {
                   <Mail className="w-6 h-6 text-[#D95B29] mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-navy-800 mb-1">Email</h4>
-                    <p className="text-gray-700">geral@mrf.pt</p>
+                    <p className="text-gray-700">marioribeiro@mrf.pt</p>
                   </div>
                 </div>
               </div>
