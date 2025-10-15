@@ -162,7 +162,7 @@ const JobAdministrativo: React.FC = () => {
                   <ul className="space-y-3">
                     {[
                       'Experiência em funções administrativas (preferencial)',
-                      'Excelentes conhecimentos de MS Office (Word, Excel, Outlook)',
+                      'Conhecimentos de MS Office (Word, Excel, Outlook)',
                       'Boa capacidade de organização e gestão de prioridades',
                       'Sentido de responsabilidade e rigor',
                       'Boa capacidade de comunicação escrita e oral',
