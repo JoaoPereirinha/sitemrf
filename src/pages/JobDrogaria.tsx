@@ -168,7 +168,8 @@ const JobDrogaria: React.FC = () => {
                       'Responsabilidade e pontualidade',
                       'Conhecimentos de materiais de construção (preferencial)',
                       'Experiência anterior em atendimento ao público (preferencial)',
-                      'Disponibilidade para trabalhar aos sábados'
+                      'Disponibilidade para trabalhar aos sábados',
+                      'Disponibilidade imediata (preferencial)'
                     ].map((item, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-[#D95B29] flex-shrink-0 mt-0.5" />
