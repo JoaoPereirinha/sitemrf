@@ -171,6 +171,7 @@ const JobArmazem: React.FC = () => {
                       'Sentido de responsabilidade e pontualidade',
                       'Capacidade de trabalhar em equipa',
                       'Disponibilidade para trabalhar aos sábados'
+                      'Disponibilidade imediata (preferencial)'
                     ].map((item, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-[#D95B29] flex-shrink-0 mt-0.5" />
