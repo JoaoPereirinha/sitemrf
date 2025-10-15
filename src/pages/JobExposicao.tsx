@@ -132,7 +132,7 @@ const JobExposicao: React.FC = () => {
                     na nossa área de exposição. Esta posição combina vendas com consultoria especializada em materiais de construção.
                   </p>
                   <p className="text-gray-700 leading-relaxed">
-                    O(a) candidato(a) ideal terá gosto por design e decoração, excelentes competências de comunicação
+                    Valoriza-se o(a) candidato(a) com gosto por design e decoração, competências de comunicação
                     e capacidade para ajudar os clientes a visualizar e concretizar os seus projetos.
                   </p>
                 </div>
@@ -145,7 +145,6 @@ const JobExposicao: React.FC = () => {
                       'Apresentação e demonstração de produtos expostos',
                       'Aconselhamento sobre escolhas de materiais e acabamentos',
                       'Elaboração de orçamentos e propostas comerciais',
-                      'Acompanhamento de projetos desde a conceção até à venda',
                       'Manutenção da organização e apresentação da exposição',
                       'Gestão de amostras e catálogos',
                       'Identificação de novas oportunidades de venda'
@@ -162,12 +161,9 @@ const JobExposicao: React.FC = () => {
                   <h2 className="text-2xl font-semibold text-navy-800 mb-4">Requisitos</h2>
                   <ul className="space-y-3">
                     {[
-                      'Excelente apresentação e capacidade de comunicação',
+                      'Boa apresentação e capacidade de comunicação',
                       'Gosto por design, decoração e materiais de construção',
                       'Experiência em vendas ou atendimento ao cliente (preferencial)',
-                      'Criatividade e sentido estético apurado',
-                      'Capacidade de trabalhar por objetivos',
-                      'Proatividade e orientação para resultados',
                       'Conhecimentos de informática na ótica do utilizador'
                     ].map((item, index) => (
                       <li key={index} className="flex items-start gap-3">
@@ -183,7 +179,6 @@ const JobExposicao: React.FC = () => {
                   <div className="grid md:grid-cols-2 gap-4">
                     {[
                       { icon: <Award className="w-6 h-6" />, text: 'Contrato de trabalho estável' },
-                      { icon: <TrendingUp className="w-6 h-6" />, text: 'Comissões sobre vendas' },
                       { icon: <Users className="w-6 h-6" />, text: 'Ambiente de trabalho criativo' },
                       { icon: <Clock className="w-6 h-6" />, text: 'Horário de trabalho equilibrado' },
                       { icon: <Award className="w-6 h-6" />, text: 'Formação especializada' },
