@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Catalog from './pages/Catalog';
 import Careers from './pages/Careers';
+import JobDrogaria from './pages/JobDrogaria';
+import JobArmazem from './pages/JobArmazem';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import LoadingScreen from './components/LoadingScreen';
 
@@ -19,6 +21,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/catalogo" element={<Catalog />} />
             <Route path="/carreiras" element={<Careers />} />
+            <Route path="/carreiras/drogaria" element={<JobDrogaria />} />
+            <Route path="/carreiras/armazem" element={<JobArmazem />} />
             <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
           </Routes>
         </BrowserRouter>

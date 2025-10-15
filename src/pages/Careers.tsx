@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
 import { Users, Award, Clock, MapPin, Mail, Phone, Building2, Heart, TrendingUp, Shield, Briefcase, CheckCircle } from 'lucide-react';
 
 const Careers: React.FC = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -115,7 +117,8 @@ const Careers: React.FC = () => {
         "Boa capacidade de comunicação e relacionamento interpessoal",
         "Simpatia e proatividade no atendimento ao cliente",
         "Conhecimentos de materiais de construção (preferencial)"
-      ]
+      ],
+      link: "/carreiras/drogaria"
     },
     {
       title: "Operador/a de Armazém",
@@ -125,7 +128,8 @@ const Careers: React.FC = () => {
         "Experiência em gestão de armazém",
         "Carta de empilhador (preferencial)",
         "Capacidade de organização"
-      ]
+      ],
+      link: "/carreiras/armazem"
     }
   ];
 
@@ -229,13 +233,12 @@ const Careers: React.FC = () => {
                     </ul>
                   </div>
 
-                  <a
-                    href="#application-form"
-                    className="inline-block btn-primary"
-                    onClick={() => setFormData(prev => ({ ...prev, position: position.title }))}
+                  <button
+                    onClick={() => navigate(position.link)}
+                    className="btn-primary"
                   >
-                    Candidatar-me a esta vaga
-                  </a>
+                    Ver Detalhes e Candidatar-me
+                  </button>
                 </div>
               ))}
             </div>
