@@ -140,7 +140,7 @@ const Careers: React.FC = () => {
       description: "Área de trabalho focada em atendimento especializado na nossa exposição de materiais.",
       requirements: [
         "Gosto por design e decoração",
-        "Excelente apresentação",
+        "Boa apresentação",
         "Capacidade de comunicação"
       ],
       link: "/carreiras/exposicao"
