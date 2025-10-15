@@ -133,7 +133,7 @@ const JobMotorista: React.FC = () => {
                   </p>
                   <p className="text-gray-700 leading-relaxed">
                     O(a) candidato(a) ideal terá experiência em condução de veículos pesados, conhecimento da região
-                    e excelentes competências de atendimento ao cliente.
+                    e competências de atendimento ao cliente.
                   </p>
                 </div>
 
