@@ -147,7 +147,7 @@ const JobArmazem: React.FC = () => {
                       'Operação de empilhador e outros equipamentos de armazém',
                       'Controlo de inventário e registo de movimentações',
                       'Manutenção da limpeza e organização do armazém',
-                      'Apoio no carregamento e descarregamento de viaturas',
+                      'Apoio na carga e descarga de veiculos',
                       'Cumprimento das normas de segurança e higiene no trabalho'
                     ].map((item, index) => (
                       <li key={index} className="flex items-start gap-3">
