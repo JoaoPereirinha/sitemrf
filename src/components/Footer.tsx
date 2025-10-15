@@ -6,12 +6,13 @@ const Footer: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isCatalogPage = location.pathname === '/catalogo';
+  const isCareersPage = location.pathname === '/carreiras' || location.pathname.startsWith('/carreiras/');
 
   const handleNavigation = (path: string) => {
     if (path.startsWith('/')) {
       navigate(path);
       window.scrollTo(0, 0);
-    } else if (isCatalogPage) {
+    } else if (isCatalogPage || isCareersPage) {
       navigate('/', { replace: true });
       setTimeout(() => {
         const element = document.querySelector(path);

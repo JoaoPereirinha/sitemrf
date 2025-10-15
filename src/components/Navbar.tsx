@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const isCatalogPage = location.pathname === '/catalogo';
-  const isCareersPage = location.pathname === '/carreiras';
+  const isCareersPage = location.pathname === '/carreiras' || location.pathname.startsWith('/carreiras/');
 
   useEffect(() => {
     const handleScroll = () => {
