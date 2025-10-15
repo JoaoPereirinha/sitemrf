@@ -165,7 +165,7 @@ const JobAdministrativo: React.FC = () => {
                       'Excelentes conhecimentos de MS Office (Word, Excel, Outlook)',
                       'Boa capacidade de organização e gestão de prioridades',
                       'Sentido de responsabilidade e rigor',
-                      'Excelente capacidade de comunicação escrita e oral',
+                      'Boa capacidade de comunicação escrita e oral',
                       'Proatividade e espírito de equipa',
                     ].map((item, index) => (
                       <li key={index} className="flex items-start gap-3">
