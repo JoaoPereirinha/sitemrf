@@ -164,7 +164,7 @@ const JobArmazem: React.FC = () => {
                     {[
                       'Experiência em gestão de armazém (preferencial)',
                       'Carta de empilhador (preferencial)',
-                      'Excelente capacidade de organização e atenção ao detalhe',
+                      'Capacidade de organização e atenção ao detalhe',
                       'Capacidade física para movimentação de cargas',
                       'Conhecimentos de materiais de construção (preferencial)',
                       'Sentido de responsabilidade e pontualidade',
