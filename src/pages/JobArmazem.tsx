@@ -163,7 +163,7 @@ const JobArmazem: React.FC = () => {
                   <ul className="space-y-3">
                     {[
                       'Experiência em gestão de armazém (preferencial)',
-                      'Carta de empilhador válida (preferencial mas valorizado)',
+                      'Carta de empilhador (preferencial)',
                       'Excelente capacidade de organização e atenção ao detalhe',
                       'Capacidade física para movimentação de cargas',
                       'Conhecimentos de informática na ótica do utilizador',
