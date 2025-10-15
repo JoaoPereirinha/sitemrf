@@ -162,7 +162,7 @@ const JobArmazem: React.FC = () => {
                   <h2 className="text-2xl font-semibold text-navy-800 mb-4">Requisitos</h2>
                   <ul className="space-y-3">
                     {[
-                      'Experiência comprovada em gestão de armazém',
+                      'Experiência em gestão de armazém (preferencial)',
                       'Carta de empilhador válida (preferencial mas valorizado)',
                       'Excelente capacidade de organização e atenção ao detalhe',
                       'Capacidade física para movimentação de cargas',
