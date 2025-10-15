@@ -170,7 +170,7 @@ const JobArmazem: React.FC = () => {
                       'Conhecimentos de materiais de construção (preferencial)',
                       'Sentido de responsabilidade e pontualidade',
                       'Capacidade de trabalhar em equipa',
-                      'Disponibilidade para trabalhar aos sábados'
+                      'Disponibilidade para trabalhar aos sábados',
                       'Disponibilidade imediata (preferencial)'
                     ].map((item, index) => (
                       <li key={index} className="flex items-start gap-3">
