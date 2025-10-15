@@ -142,10 +142,9 @@ const JobMotorista: React.FC = () => {
                   <ul className="space-y-3">
                     {[
                       'Entrega de materiais de construção aos clientes',
-                      'Carregamento e descarregamento de mercadorias',
+                      'Carga e descarga de mercadorias',
                       'Verificação das encomendas antes da saída',
                       'Manutenção básica e limpeza do veículo',
-                      'Planeamento de rotas de distribuição',
                       'Atendimento profissional aos clientes durante as entregas',
                       'Recolha de documentação e assinaturas de entrega',
                       'Cumprimento das normas de segurança rodoviária'
@@ -168,8 +167,7 @@ const JobMotorista: React.FC = () => {
                       'Conhecimento da região de Aveiro e arredores',
                       'Responsabilidade e pontualidade',
                       'Boa apresentação e competências de comunicação',
-                      'Capacidade física para movimentação de cargas',
-                      'Disponibilidade imediata (preferencial)'
+                      'Capacidade física para movimentação de cargas'
                     ].map((item, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-[#D95B29] flex-shrink-0 mt-0.5" />
