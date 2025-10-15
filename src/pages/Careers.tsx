@@ -121,9 +121,9 @@ const Careers: React.FC = () => {
       link: "/carreiras/drogaria"
     },
     {
-      title: "Operador/a de Armazém",
+      title: "Colaborador de Armazém",
       type: "Full-time",
-      description: "Necessitamos de operador/a de armazém para gestão de stock e preparação de encomendas.",
+      description: "Necessitamos de colaborador de armazém para gestão de stock e preparação de encomendas.",
       requirements: [
         "Experiência em gestão de armazém",
         "Carta de empilhador (preferencial)",
@@ -359,16 +359,22 @@ const Careers: React.FC = () => {
                       
                       <div>
                         <label htmlFor="position" className="block text-sm font-medium text-gray-700 mb-1">Área de Interesse *</label>
-                        <input
-                          type="text"
+                        <select
                           id="position"
                           name="position"
                           value={formData.position}
                           onChange={handleInputChange}
                           required
                           className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#D95B29] focus:border-[#D95B29]"
-                          placeholder="Ex: Vendas, Armazém, Administrativo, etc."
-                        />
+                        >
+                          <option value="">Selecione uma área</option>
+                          <option value="Colaborador(a) para drogaria (Atendimento ao público)">Atendimento ao Público - Drogaria</option>
+                          <option value="Colaborador de Armazém">Colaborador de Armazém</option>
+                          <option value="Atendimento ao Cliente - Exposição">Atendimento ao Cliente - Exposição</option>
+                          <option value="Motorista">Motorista</option>
+                          <option value="Administrativo">Administrativo</option>
+                          <option value="Outra">Outra</option>
+                        </select>
                       </div>
                       
                       <div>

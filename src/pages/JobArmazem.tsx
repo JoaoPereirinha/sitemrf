@@ -11,7 +11,7 @@ const JobArmazem: React.FC = () => {
     name: '',
     email: '',
     phone: '',
-    position: 'Operador/a de Armazém',
+    position: 'Colaborador de Armazém',
     experience: '',
     message: '',
     cv: null as File | null,
@@ -69,7 +69,7 @@ const JobArmazem: React.FC = () => {
           name: '',
           email: '',
           phone: '',
-          position: 'Operador/a de Armazém',
+          position: 'Colaborador de Armazém',
           experience: '',
           message: '',
           cv: null,
@@ -103,7 +103,7 @@ const JobArmazem: React.FC = () => {
               <div className="lg:col-span-2 space-y-8">
                 <div>
                   <h1 className="text-4xl font-bold text-navy-800 mb-4">
-                    Operador/a de Armazém
+                    Colaborador de Armazém
                   </h1>
                   <div className="flex flex-wrap gap-4 text-gray-600">
                     <div className="flex items-center gap-2">
@@ -124,7 +124,7 @@ const JobArmazem: React.FC = () => {
                 <div className="bg-navy-50 rounded-lg p-6">
                   <h2 className="text-2xl font-semibold text-navy-800 mb-4">Sobre a Posição</h2>
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    Procuramos um(a) operador(a) de armazém organizado(a) e responsável para integrar a nossa equipa logística.
+                    Procuramos um(a) colaborador(a) de armazém organizado(a) e responsável para integrar a nossa equipa logística.
                     Esta posição é fundamental para garantir a eficiência das operações de armazém e a satisfação dos nossos clientes.
                   </p>
                   <p className="text-gray-700 leading-relaxed">
