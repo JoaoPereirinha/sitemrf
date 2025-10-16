@@ -240,14 +240,16 @@ const Careers: React.FC = () => {
         {/* Open Positions */}
         <section className="section-padding bg-gray-50">
           <div className="container-custom">
-            <h2 className="section-title mb-3 text-center">Vagas Disponíveis</h2>
-            <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
-              Estamos atualmente à procura de profissionais para as seguintes posições
-            </p>
+            <div className="text-center mb-8">
+              <h2 className="section-title mb-3">Vagas Disponíveis</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Estamos atualmente à procura de profissionais para as seguintes posições
+              </p>
+            </div>
 
             <div className="max-w-4xl mx-auto space-y-4">
               {openPositions.map((position, index) => (
-                <div key={index} className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <div key={index} className="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-[#D95B29] hover:shadow-xl transition-all duration-300">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-3">
                       <Briefcase className="w-6 h-6 text-[#D95B29]" />
@@ -296,7 +298,7 @@ const Careers: React.FC = () => {
 
             <div className="max-w-4xl mx-auto space-y-4">
               {spontaneousPositions.map((position, index) => (
-                <div key={index} className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <div key={index} className="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-[#D95B29] hover:shadow-xl transition-all duration-300">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-3">
                       <Briefcase className="w-6 h-6 text-[#D95B29]" />
