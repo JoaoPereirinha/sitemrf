@@ -63,7 +63,6 @@ const Navbar: React.FC = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-1">
           <button onClick={() => handleNavigation('/')} className="nav-link-active">Home</button>
-          <button onClick={() => handleNavigation('/carreiras')} className="nav-link">Carreiras</button>
           {!isCatalogPage && !isCareersPage && (
             <>
               <button onClick={() => handleNavigation('#sobre-nos')} className="nav-link">Sobre Nós</button>
@@ -72,6 +71,7 @@ const Navbar: React.FC = () => {
               <button onClick={() => handleNavigation('#contactos')} className="nav-link">Contactos</button>
             </>
           )}
+          <button onClick={() => handleNavigation('/carreiras')} className="nav-link">Carreiras</button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -92,7 +92,6 @@ const Navbar: React.FC = () => {
       >
         <div className="container-custom py-4 flex flex-col space-y-3">
           <button onClick={() => handleNavigation('/')} className="nav-link-active text-left">Home</button>
-          <button onClick={() => handleNavigation('/carreiras')} className="nav-link text-left">Carreiras</button>
           {!isCatalogPage && !isCareersPage && (
             <>
               <button onClick={() => handleNavigation('#sobre-nos')} className="nav-link text-left">Sobre Nós</button>
@@ -101,6 +100,7 @@ const Navbar: React.FC = () => {
               <button onClick={() => handleNavigation('#contactos')} className="nav-link text-left">Contactos</button>
             </>
           )}
+          <button onClick={() => handleNavigation('/carreiras')} className="nav-link text-left">Carreiras</button>
         </div>
       </div>
     </header>
