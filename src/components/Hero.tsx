@@ -12,8 +12,8 @@ const slides: Slide[] = [
   {
     id: 1,
     imageUrl: "/balanco_banner_site.jpg",
-    title: "Encerrados para Balanço",
-    description: "Estamos a realizar o nosso inventário anual. Em breve estaremos de volta para continuar a servi-lo."
+    title: "Trinta e Um de Dezembro até dia Três de Janeiro",
+    description: "Informamos os nossos estimados clientes que iremos estar encerrados para balanço."
   },
   {
     id: 2,
