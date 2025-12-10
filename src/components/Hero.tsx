@@ -12,7 +12,8 @@ const slides: Slide[] = [
   {
     id: 1,
     imageUrl: "/balanco_banner_site.jpg",
-    title: "31 de Dezembro até 3 de Janeiro",
+    title: "31 de Dezembro até 
+    3 de Janeiro",
     description: "Informamos os nossos estimados clientes que iremos estar encerrados para balanço."
   },
   {
