@@ -12,11 +12,17 @@ const slides: Slide[] = [
   {
     id: 1,
     imageUrl: "/balanco_banner_site.jpg",
+    title: "Encerrados para Balanço",
+    description: "Estamos a realizar o nosso inventário anual. Em breve estaremos de volta para continuar a servi-lo."
+  },
+  {
+    id: 2,
+    imageUrl: "/Slide1.png",
     title: "Confiança e Experiência ao Seu Serviço",
     description: "Com mais de 35 anos no mercado, a Mário Ribeiro & Filhos garante qualidade no serviço prestado ao seu cliente."
   },
   {
-    id: 2,
+    id: 3,
     imageUrl: "https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg",
     title: "Materiais de Qualidade para a Sua Obra",
     description: "Revendedores de marcas de confiança e de renome no mercado nacional."
@@ -86,11 +92,11 @@ const Hero: React.FC = () => {
                 <p className="text-xl text-white mb-8">
                   {slide.description}
                 </p>
-                <button 
+                <button
                   className="btn-primary"
-                  onClick={index === 0 ? scrollToAboutUs : index === 1 ? scrollToMarcas : undefined}
+                  onClick={index === 0 ? scrollToContacts : index === 1 ? scrollToAboutUs : index === 2 ? scrollToMarcas : undefined}
                 >
-                  {index === 0 ? 'Sobre Nós' : index === 1 ? 'Marcas' : 'Saiba Mais'}
+                  {index === 0 ? 'Contacte-nos' : index === 1 ? 'Sobre Nós' : index === 2 ? 'Marcas' : 'Saiba Mais'}
                 </button>
               </div>
             </div>
