@@ -11,7 +11,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    imageUrl: "/Slide1.png",
+    imageUrl: "/balanco_banner_site.jpg",
     title: "Confiança e Experiência ao Seu Serviço",
     description: "Com mais de 35 anos no mercado, a Mário Ribeiro & Filhos garante qualidade no serviço prestado ao seu cliente."
   },
