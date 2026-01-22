@@ -10,12 +10,6 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    id: 1,
-    imageUrl: "/balanco_banner_site.jpg",
-    title: "31 de Dezembro até 3 de Janeiro",
-    description: "Informamos os nossos estimados clientes que iremos estar encerrados para balanço."
-  },
-  {
     id: 2,
     imageUrl: "/Slide1.png",
     title: "Confiança e Experiência ao Seu Serviço",
@@ -94,9 +88,9 @@ const Hero: React.FC = () => {
                 </p>
                 <button
                   className="btn-primary"
-                  onClick={index === 0 ? scrollToContacts : index === 1 ? scrollToAboutUs : index === 2 ? scrollToMarcas : undefined}
+                  onClick={index === 0 ? scrollToAboutUs : index === 1 ? scrollToMarcas : undefined}
                 >
-                  {index === 0 ? 'Contacte-nos' : index === 1 ? 'Sobre Nós' : index === 2 ? 'Marcas' : 'Saiba Mais'}
+                  {index === 0 ? 'Sobre Nós' : index === 1 ? 'Marcas' : 'Saiba Mais'}
                 </button>
               </div>
             </div>
