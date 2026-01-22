@@ -17,7 +17,7 @@ const slides: Slide[] = [
   },
   {
     id: 3,
-    imageUrl: "https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg",
+    imageUrl: "/exposicao1 copy.jpg",
     title: "Materiais de Qualidade para a Sua Obra",
     description: "Revendedores de marcas de confiança e de renome no mercado nacional."
   }
