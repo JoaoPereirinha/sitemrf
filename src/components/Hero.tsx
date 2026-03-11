@@ -20,6 +20,12 @@ const slides: Slide[] = [
     imageUrl: "/exposicao1 copy.jpg",
     title: "Materiais de Qualidade para a Sua Obra",
     description: "Revendedores de marcas de confiança e de renome no mercado nacional."
+  },
+  {
+    id: 4,
+    imageUrl: "/WhatsApp_Image_2026-03-11_at_13.34.01.jpeg",
+    title: "Visite-nos e Conheça Nossas Soluções",
+    description: "Venha visitar a nossa exposição e conheça pessoalmente todos os nossos produtos e marcas disponíveis para o seu projeto."
   }
 ];
 
@@ -88,9 +94,9 @@ const Hero: React.FC = () => {
                 </p>
                 <button
                   className="btn-primary"
-                  onClick={index === 0 ? scrollToAboutUs : index === 1 ? scrollToMarcas : undefined}
+                  onClick={index === 0 ? scrollToAboutUs : index === 1 ? scrollToMarcas : index === 2 ? scrollToContacts : undefined}
                 >
-                  {index === 0 ? 'Sobre Nós' : index === 1 ? 'Marcas' : 'Saiba Mais'}
+                  {index === 0 ? 'Sobre Nós' : index === 1 ? 'Marcas' : index === 2 ? 'Contacte-nos' : 'Saiba Mais'}
                 </button>
               </div>
             </div>
