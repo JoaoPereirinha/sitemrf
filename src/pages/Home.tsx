@@ -7,14 +7,11 @@ import Brands from '../components/Brands';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
-import HolidayBanner from '../components/HolidayBanner';
-
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       <main>
-        <HolidayBanner />
         <Hero />
         <AboutUs />
         <Products />
