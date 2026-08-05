@@ -89,9 +89,9 @@ const Hero: React.FC = () => {
             alt={slide.title}
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 z-20 flex items-center">
+          <div className={`absolute inset-0 z-20 flex items-center ${index === 0 ? 'justify-center text-center' : ''}`}>
             <div className="container-custom">
-              <div className="max-w-2xl animate-fade-in">
+              <div className={`max-w-2xl animate-fade-in ${index === 0 ? 'mx-auto' : ''}`}>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
                   {slide.title}
                 </h1>
