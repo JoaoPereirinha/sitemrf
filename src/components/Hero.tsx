@@ -10,12 +10,6 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    id: 1,
-    imageUrl: "/avisoferias.jpg",
-    title: "Boas Férias",
-    description: "Estaremos encerrados de 10 a 15 de Agosto"
-  },
-  {
     id: 2,
     imageUrl: "/Slide1.png",
     title: "Confiança e Experiência ao Seu Serviço",
